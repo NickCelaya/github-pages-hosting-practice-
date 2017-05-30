@@ -1,0 +1,59 @@
+<div class="test">
+
+    <div ui-sref="home" class="words2">DinnerTable
+
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+        <br>
+        <div class="flavor">Create your flavor </div>
+
+    </div>
+
+
+    <div class="recipecontainer">
+        <!--
+        <div class="recipe2">
+            <div class=" words buttons">buttons</div>
+        </div> -->
+
+        <div class="recipe2 words">
+            <div class="buttons" ng-click="getInfo()">Get Recipe</div>
+
+
+            <div ng-click="clearData()" class="buttons">Clear Recipe</div>
+        </div>
+
+        <div class="recipe list ">
+            <!-- class="list listwords" -->
+
+            <div class="listwords">
+                <!-- {{data}} -->
+                <ul ng-repeat="item in data">
+                    <br>
+                    <li>Ingredients{{item.ingredients}}</li>
+                    <br>
+                    <br>
+                    <li>Title:{{item.title}}</li>
+                    <img ng-src="{{item.thumbnail}}" alt="">
+                    <!-- <br>
+                    <br> -->
+                    <!-- <li>Title:{{item.title}}</li> -->
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<!--
+    <div ng-repeat="item in data">
+        {{item.title}}
+
+    </div> -->
+
+</div>
